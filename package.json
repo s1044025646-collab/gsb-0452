@@ -1,0 +1,25 @@
+{
+  "name": "tm-lab",
+  "version": "1.0.0",
+  "description": "Deterministic single-tape Turing machine executor with bounded-step halt diagnostics",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/tm.test.js",
+    "start": "node dist/src/server.js",
+    "demo": "node dist/src/cli.js demo",
+    "cli": "node dist/src/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}

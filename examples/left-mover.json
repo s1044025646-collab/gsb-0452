@@ -1,0 +1,12 @@
+{
+  "name": "left-mover",
+  "states": ["q", "accept"],
+  "startState": "q",
+  "acceptStates": ["accept"],
+  "rejectStates": [],
+  "symbols": ["1", "_"],
+  "blank": "_",
+  "transitions": [
+    { "state": "q", "read": "_", "next": "q", "write": "_", "move": "L" }
+  ]
+}
